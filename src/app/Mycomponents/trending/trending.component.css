@@ -1,0 +1,42 @@
+#heading{
+    text-align: center;
+    margin-top: 15px;
+    color: #ddccb8 !important;
+    font-size: 43px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+#trending{
+    display: flex;
+    flex-wrap: wrap;
+}
+#trending img{
+    height: 160px;
+    border-radius: 15px;
+}
+.card{
+    border-radius: 15px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+#Viewbtn{
+    background-color: #ddccb8;
+    margin: 50px;
+    color: #666666;
+    font-weight: 501;
+    border-radius: 15px;
+}
+.card h4{
+    margin: 10px;
+    text-align: center;
+}
+#VCbtn{
+    background-color:#283444 ; 
+    color: #ddccb8;
+    margin: 30px;
+    font-weight: 501;
+}
+.card:hover{
+    background-color: #283444;
+    color: #ddccb8;
+}

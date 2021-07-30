@@ -1,0 +1,20 @@
+<h2 id="heading">TRENDING COLLECTIONS</h2>
+<div id="trending">
+  <div class="card" style="width: 18rem;" *ngFor = "let x of TC">
+    <img src="{{x.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">{{x.title}}</h4>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p> -->
+        <!-- <div class="text-center">
+
+          <a id="VCbtn" href="#" class="btn" >View Collection</a>
+        </div> -->
+    </div>
+  </div>
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button id="Viewbtn" class="btn" type="button">View All Collections</button>
+  
+</div>
