@@ -4,21 +4,21 @@ export const NOW : nowshowing[]=[
     {
         image : "/assets/images/dove middle east.png",
         title : "Dove Drama (Middle East) - \"If your skin could talk\" ",
-        date : " "
+        date : "July 23, 2021 "
     },
     {
-        image : "/assets/images/Covid-19.png",
-        title : "Covid-19 Collection",
-        date : " "
+        image : "/assets/images/airtel.png",
+        title : "Airtel \"Family Plan\"",
+        date : " July 23, 2021"
     },
     {
-        image : "/assets/images/Car.png",
-        title : "Best Car Ads",
-        date : " "
+        image : "/assets/images/whatsapp.png",
+        title : "WhatsApp \"Caretaker\" 60 Sec",
+        date : "July 22, 2021"
     },
     {
-        image : "/assets/images/best 2018.png",
-        title : "Best Ads 2018",
-        date : " "
+        image : "/assets/images/Cue math.png",
+        title : "Math makes you a better coder | Cuemath | Vidya Balan",
+        date : "July 19, 2021 "
     }
 ]

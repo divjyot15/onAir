@@ -1,0 +1,55 @@
+#explore,#contact{
+    width: 210.917px;
+    /* height: 464.2px; */
+    
+    margin-top: 65px;
+    
+}
+#looking{
+    width: 210.917px;
+    color: white;
+}
+footer{
+    background-color: #283444;
+}
+h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: #ddccb8;
+}
+.btn{
+    background-color: #ddccb8 ;
+    width:210.637px ;
+    margin-bottom: 80px;
+}
+.btn a{
+    color: #666666 !important;
+    font-weight: 501;
+}
+#copyright{
+    text-align: center;
+    background-color:  #ddccb8;
+    color: #666666 !important;
+}
+#find{
+    margin-top: 65px;
+}
+#findheading{
+    font-size: 40px;
+    margin-right: 100px;
+}
+#findbtn1{
+    margin-right: 10px;
+    margin-top: 50px;
+}
+#findbtn2{
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+
+

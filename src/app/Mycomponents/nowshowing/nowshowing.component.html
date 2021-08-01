@@ -1,4 +1,26 @@
-<div *ngFor="let y of NS">
-    {{y.title}}
 
+<h2 id="heading">NOW SHOWING</h2>
+
+
+<div id="elements" >
+    <div  class="card" style="width: 18rem;" *ngFor="let y of NS">
+        <img src="{{y.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text" id="title">{{y.title}}</p>
+          <p class="text-muted">{{y.date}}</p>
+        </div>
+      </div>
 </div>
+
+<hr>
+
+<div id="elements" >
+  <div  class="card" style="width: 18rem;" *ngFor="let y of NS">
+      <img src="{{y.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text" id="title">{{y.title}}</p>
+        <p class="text-muted">{{y.date}}</p>
+      </div>
+    </div>
+</div>
+
