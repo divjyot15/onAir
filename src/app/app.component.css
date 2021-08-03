@@ -3,4 +3,5 @@
 }
 nav{
     background-color: #283444;
+    scroll-behavior: smooth;
 }

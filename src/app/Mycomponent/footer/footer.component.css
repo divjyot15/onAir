@@ -34,6 +34,8 @@ a{
     text-align: center;
     background-color:  #ddccb8;
     color: #666666 !important;
+    padding: 10px;
+    font-size: 17px;
 }
 #find{
     margin-top: 65px;
@@ -50,6 +52,11 @@ a{
     margin-left: 10px;
     margin-top: 50px;
 }
-
-
+#follow{
+    color: black;
+}
+i{
+    color: black;
+    
+}
 
