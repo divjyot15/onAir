@@ -59,4 +59,34 @@ i{
     color: black;
     
 }
-
+@media only screen and (max-width: 500px){
+    #explore{
+        margin-left: 20px;
+        margin-right: 50px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    #contact{
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-right: 80px;
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+    #findheading{
+        width: 300px;
+        font-size: 35px;
+        text-align: center;
+      margin-left: 20px;
+    }
+    #findbtn1{
+        margin: 20px;
+        width: 300px;
+    }
+    #findbtn2{
+        margin: 20px;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+}

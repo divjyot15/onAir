@@ -30,3 +30,15 @@
     margin-bottom: 38px;
     color: #283444;
 }
+@media only screen and (max-width: 500px){
+    #heading{
+        font-size: 38px;
+        margin-top: 20px;
+    }
+    #telenor{
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+        /* margin-left: 25px; */
+    }
+}

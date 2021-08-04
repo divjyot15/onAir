@@ -5,3 +5,8 @@ nav{
     background-color: #283444;
     scroll-behavior: smooth;
 }
+/* @media only screen and (max-width: 500px){
+    #submitimg{
+        height: 150px;
+    }
+} */
