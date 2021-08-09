@@ -9,6 +9,7 @@ import { ExclusiveComponent } from './Mycomponents/exclusive/exclusive.component
 import { NowshowingComponent } from './Mycomponents/nowshowing/nowshowing.component';
 import { InternationalComponent } from './Mycomponents/international/international.component';
 import { FooterComponent } from './Mycomponent/footer/footer.component';
+import { AdvideoComponent } from './Mycomponent/advideo/advideo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './Mycomponent/footer/footer.component';
     ExclusiveComponent,
     NowshowingComponent,
     InternationalComponent,
-    FooterComponent
+    FooterComponent,
+    AdvideoComponent
   ],
   imports: [
     BrowserModule,
