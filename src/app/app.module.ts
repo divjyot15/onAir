@@ -10,6 +10,9 @@ import { NowshowingComponent } from './Mycomponents/nowshowing/nowshowing.compon
 import { InternationalComponent } from './Mycomponents/international/international.component';
 import { FooterComponent } from './Mycomponents/footer/footer.component';
 import { AdvideoComponent } from './Mycomponents/advideo/advideo.component';
+import { CrewComponent } from './Mycomponents/crew/crew.component';
+import { AgencyComponent } from './Mycomponents/agency/agency.component';
+import { ClientComponent } from './Mycomponents/client/client.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { AdvideoComponent } from './Mycomponents/advideo/advideo.component';
     NowshowingComponent,
     InternationalComponent,
     FooterComponent,
-    AdvideoComponent
+    AdvideoComponent,
+    CrewComponent,
+    AgencyComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { nowshowing } from 'src/app/shared/nowshowing';
+import { NowshowingService } from 'src/app/services/nowshowing.service';
+
+
 
 @Component({
   selector: 'app-advideo',
@@ -6,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./advideo.component.css']
 })
 export class AdvideoComponent implements OnInit {
-
-  constructor() { }
+  now:nowshowing[];
+  constructor(private nowservice: NowshowingService) { }
 
   ngOnInit(): void {
+  this.now =this.nowservice.getnow();
+    
   }
 
 }

@@ -1,1 +1,40 @@
-<p>advideo works!</p>
+
+<div class="container" style="margin-top: 50px;margin-bottom: 100px;">
+    <div class="row">
+      <div class="col-lg-8" style="padding-left: 10px;">
+        <iframe height="480" width="750"
+ src="https://www.youtube.com/embed/NlHpO_fl57Q/?controls=1" allowfullscreen>
+</iframe>
+      </div>
+      <div class="col-lg-4" >
+          <h2 id="moreAdsHeading">
+              Watch other Ads
+          </h2>
+        <div class="card mb-3" style="max-width: 540px;"  *ngFor="let x of now">
+            <div class="row g-0">
+              <div class="col-md-4" >
+                <img id="thumbnails" src="{{x.image}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 id="title" class="card-title">{{x.title}}</h5>
+                  
+                  <p id="date" class="card-text"><small class="text-muted">{{x.date}}</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="infobuttons">
+  
+  <button type="button" class="btn btn-light shadow p-3 mb-5 bg-white rounded" routerLink="./crew">Crew</button>
+  <button type="button" class="btn btn-light shadow p-3 mb-5 bg-white rounded" [routerLink]="['./agency']">Agency</button>
+  <button type="button" class="btn btn-light shadow p-3 mb-5 bg-white rounded" [routerLink]="['./client']">Client</button>
+  
+</div>
+
+<router-outlet ></router-outlet>
