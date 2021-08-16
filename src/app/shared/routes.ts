@@ -3,6 +3,7 @@ import { Routes } from "@angular/router";
 import { AdvideoComponent } from "../Mycomponents/advideo/advideo.component";
 import { AgencyComponent } from "../Mycomponents/agency/agency.component";
 import { ClientComponent } from "../Mycomponents/client/client.component";
+import { CollectionComponent } from "../Mycomponents/collection/collection.component";
 import { CrewComponent } from "../Mycomponents/crew/crew.component";
 import { SlideShowComponent } from "../Mycomponents/slide-show/slide-show.component";
 
@@ -14,6 +15,7 @@ export const routes : Routes = [
     ]},
     {path : 'slideshow', component : SlideShowComponent },
     { path: '', redirectTo: '/slideshow', pathMatch: 'full' },
+    {path : 'collection/:title', component : CollectionComponent }
    
 
 ]

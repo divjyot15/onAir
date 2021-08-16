@@ -10,5 +10,8 @@ export class TrendingService {
   gettrending() : trending[]{
     return TrendingInfo;
   }
+  getbytitle(title: string): trending{
+    return TrendingInfo.filter((collection) => (collection.title === title))[0];
+  }
   constructor() { }
 }

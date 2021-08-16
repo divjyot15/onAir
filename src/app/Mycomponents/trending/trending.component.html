@@ -1,7 +1,7 @@
 <div id="trendingcollection">
   <h2 id="heading">TRENDING COLLECTIONS</h2>
   <div id="trending">
-    <div class="card" style="width: 18rem;" *ngFor="let x of TC">
+    <div class="card" style="width: 18rem;" *ngFor="let x of TC" [routerLink]="['/collection', x.title]">
       <img src="{{x.image}}" class="card-img-top" alt="...">
       <div class="card-body">
         <h4 class="card-title">{{x.title}}</h4>
