@@ -26,4 +26,40 @@
     margin: 5px;
     font-weight: 501;
 }
+.active{
+   border-bottom: 7px solid black;
+   border-bottom-style: groove;
+}
+
+@media only screen and (min-width: 1390px) {
+    iframe{
+        width: 850px;
+    }
+   }
+   @media only screen and (max-width: 420px) {
+     iframe{
+         width: 340px;
+         height: 250px;
+        margin-bottom: 20px;
+     }
+     #moreAdsHeading{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    #thumbnails{
+        width: 100px;
+        height: 60px;
+    }
+    #title{
+        font-size: 15px;
+       
+     }
+     #date{
+         font-size: 15px;
+     }
+     #infobuttons{
+        margin-top: 0px;
+    }
+    }
 
