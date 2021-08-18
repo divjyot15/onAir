@@ -4,12 +4,8 @@ h1{
     font-size: 50px;
     color: #ddccb8;
     font-weight: 501;
+    margin-bottom: 50px;
 }
-h2{
-    text-align: center;
-    margin-bottom: 110px;
-}
-
 #formsubmit h3{
     color: #666666;
 
@@ -23,20 +19,9 @@ h2{
     color: #666666;
     font-weight: 501;
 }
-#Viewbtn{
-    background-color: #ddccb8;
-    margin: 50px;
-    color: #666666;
-    font-weight: 501;
-    border-radius: 15px;
-}
 @media only screen and (max-width: 500px) {
     #heading{
         font-size: 38px;
-    }
-    #Viewbtn{
-        margin: 0px;
-        margin-bottom: 30px;
     }
     #formsubmit h3{
         font-size: 18px;

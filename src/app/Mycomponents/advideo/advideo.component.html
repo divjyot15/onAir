@@ -3,9 +3,14 @@
     <div class="col-lg-8 col-md-8" style="padding-left: 10px;">
       <div class="text-center">
 
-        <iframe height="480" width="750" src="https://www.youtube.com/embed/NlHpO_fl57Q/?controls=1" allowfullscreen>
+        <iframe height="480" width="750" src="https://www.youtube.com/embed/NlHpO_fl57Q/?controls=1" 
+         allowfullscreen>
         </iframe>
       </div>
+      <h2>
+        {{video.title}}
+      </h2>
+      {{video.date}}
     </div>
     <div class="col-lg-4 col-md-8">
       <h2 id="moreAdsHeading">
@@ -30,6 +35,7 @@
 </div>
 
 
+
 <div id="infobuttons">
 
   <button type="button" class="btn btn-light shadow p-3 mb-5 bg-white rounded" routerLink="./crew" routerLinkActive="active">Crew</button>
@@ -41,3 +47,28 @@
 </div>
 
 <router-outlet></router-outlet>
+
+
+<div id="formsubmit">
+  <h3>Worked On an Ad Film?</h3>
+  <button class="btn "  data-bs-toggle="modal" data-bs-target="#exampleModal">Send it to us</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-submit></app-submit>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

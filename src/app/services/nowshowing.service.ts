@@ -9,5 +9,8 @@ export class NowshowingService {
   getnow() : nowshowing[]{
     return NOW;
   }
+  getbtitle(title:string):nowshowing{
+    return NOW.filter((now)=>(now.title===title))[0];
+  }
   constructor() { }
 }

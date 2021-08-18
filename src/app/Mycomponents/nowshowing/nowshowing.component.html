@@ -3,8 +3,8 @@
   <h2 id="heading">NOW SHOWING</h2>
 
 
-  <div id="elements" routerLink= "/advideo">
-    <div class="card" style="width: 18rem;" *ngFor="let y of NS">
+  <div id="elements" >
+    <div class="card" style="width: 18rem;" *ngFor="let y of NS" [routerLink]= "['/advideo',y.title]">
       <img src="{{y.image}}" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text" id="title">{{y.title}}</p>

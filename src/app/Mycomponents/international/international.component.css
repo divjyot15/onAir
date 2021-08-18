@@ -42,3 +42,22 @@
         /* margin-left: 25px; */
     }
 }
+
+.modal-body{
+    background-color: black;
+    padding: 0px;
+}
+.modal-footer{
+    background-color: black;
+}
+
+@media only screen and (max-width: 420px) {
+    iframe{
+        width: 340px;
+        height: 250px;
+       
+    }
+}
+iframe{
+    padding-top: 10px;
+}
