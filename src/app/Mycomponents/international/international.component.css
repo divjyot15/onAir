@@ -43,11 +43,11 @@
     }
 }
 
-.modal-body{
+#video{
     background-color: black;
     padding: 0px;
 }
-.modal-footer{
+#videofooter{
     background-color: black;
 }
 
