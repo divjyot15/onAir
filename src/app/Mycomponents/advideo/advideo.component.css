@@ -40,12 +40,14 @@
      iframe{
          width: 340px;
          height: 250px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
      }
      #moreAdsHeading{
         text-align: center;
         margin-bottom: 10px;
+        margin-top: 30px;
         font-size: 25px;
+        font-weight: 501;
     }
     #thumbnails{
         width: 100px;
@@ -61,20 +63,93 @@
      #infobuttons{
         margin-top: 0px;
     }
+    #releasedon{
+        margin-bottom: 10px;
     }
+   #info li{
+      font-size: 15px;
+      width: 315px !important;
+   }
+   #info ul{
+       padding-left: 0px;
+       padding-right: 0px;
+   }
+   #info h4{
+       margin-top: 10px;
+   }
+   #formsubmit{
+       padding-top: 20px;
+   }
 
-    #formsubmit h3{
-        color: #666666;
+   
+}
+
+
+
+#formsubmit h3{
+    color: #666666;
     
-    }
-    #formsubmit{
+}
+#formsubmit{
         margin-left: 10px;
         margin-bottom: 20px;
         margin-top: 20px;
-    }
-    #formsubmit button{
+}
+#formsubmit button{
         background-color:#ddccb8;
         color: #666666;
         font-weight: 501;
-    }
+
+}
     
+#info h4{
+    text-align: center;
+    background-color:#283444;
+    padding: 10px;
+    border-radius: 15px;
+    color: #ddccb8;
+    font-weight: 501;
+    font-size: 20px;
+   
+}
+
+#info li{
+   
+    margin: 10px;
+    width: 350px;
+    text-align: center;
+    font-family: cursive;
+}
+
+#videotitle{
+    margin-left: 20px;
+    margin-top: 30px;
+    color:#283444 ;
+    font-weight: 501;
+    text-shadow: 1px 1px #ddccb8;
+}
+#releasedon{
+    margin-left: 20px;
+}
+.infobuttons{
+    background-color: pink;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.infobuttons::after{
+    content: "  >";
+}
+#collectionbutton{
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(160, 133, 185);
+}
+#collectionbutton::after{
+    content: "  >";
+}
+#info{
+    margin-top: 50px;
+}
+#formsubmit{
+    margin-left: 30px;
+}

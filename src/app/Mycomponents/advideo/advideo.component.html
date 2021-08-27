@@ -7,11 +7,26 @@
          allowfullscreen>
         </iframe>
       </div>
-      <h2>
+      <h2 id="videotitle">
         {{video.title}}
       </h2>
-      {{video.date}}
+      <h5 id="releasedon">Released on: {{video.date}}</h5>
+
+
+      <!-- buttons for brand and all -->
+      
+      <button type="button" id="collectionbutton" class="btn">Collection</button>
+      <br>
+      <button type="button" class="btn infobuttons">Brand:</button>
+      <button type="button" class="btn infobuttons">Client:</button>
+      <button type="button" class="btn infobuttons">PH:</button>
+      <button type="button" class="btn infobuttons">Agency:</button>
     </div>
+
+
+
+
+
     <div class="col-lg-4 col-md-8">
       <h2 id="moreAdsHeading">
         Watch other Ads
@@ -36,7 +51,7 @@
 
 
 
-<div id="infobuttons">
+<!-- <div id="infobuttons">
 
   <button type="button" class="btn btn-light shadow p-3 mb-5 bg-white rounded" routerLink="./crew" routerLinkActive="active">Crew</button>
   <button type="button" class="btn btn-light shadow p-3 mb-5 bg-white rounded"
@@ -46,7 +61,61 @@
 
 </div>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+
+
+
+<div id="info" class="container">
+  <div class="row row-cols-md-3 ">
+    <div class="col ">
+      <h4>Crew</h4>
+      <ul style="list-style: none;">
+        <li>Executive Producer: Khalil Bachooali</li>
+        <li>Director: Danielle Arden</li>
+        <li>Producer: Madhuri Joshi</li>
+        <li>Cinematographer: Tom L. Weir</li>
+        <li>Designer: Charbel Naimeh, N Madhusudhan</li>
+        <li>1st AD: Jad Saabi</li>
+        <li>Director’s Assistant: Sanskriti Pandey</li>
+        <li>2nd AD: Dima malaeb</li>
+        <li>Assistant Producer: Aanchal Ahuja</li>
+        <li>Line Production Company: VIP Films</li>
+        <li>Producer: Martha Nassar</li>
+        <li>Line Producer: Jana Barnard</li>
+        <li>Production Assistant: George Yazigi, Finnix</li>
+        <li>Costume Stylist: Nancy Storm, Leah D’cruz</li>
+        <li>Hair: Lorna Butler</li>
+        <li>Make up artist: Lorna Butler</li>
+        <li>Camera Operator: Walid</li>
+        <li>Focus Puller: Roger Schram</li>
+        <li>Post-production producer: Vikrant Kapoor</li>
+        <li>Offline Editor: Mark Hayek</li>
+        <li>Online Editor: Arun Murudkar</li>
+        <li>Senior Colorist: Andreas Delagado</li>
+        <li>Music Director: Jamroom</li>
+        <li>Sound Engineer: Adil Hossain</li>
+        </ul>
+    </div>
+    <div class="col-lg">
+      <h4>Agency</h4>
+      <ul style="list-style: none;" >
+        <li>Global Brand Director: Jyoti Samajpati</li>
+        <li>Chief Financial Officer: Aashish Kamath</li>
+        <li>Finance: Rittesh Vora</li>
+        <li>Finance: Aashita Kudva Mallya</li>
+        <li>Accounts Assistant: Suchita Narkar</li>
+        <li>Head of Operations: Rebecca Pereira</li>
+        </ul>
+    </div>
+    <div class="col-lg">
+      <h4>Agent</h4>
+      <ul style="list-style: none;">
+        <li>Global Brand Manager: Samarth Bharadwaj</li>
+        <li>Global Executive producer: Nazia Bihari</li>
+        </ul>
+    </div>
+  </div>
+</div>
 
 
 <div id="formsubmit">

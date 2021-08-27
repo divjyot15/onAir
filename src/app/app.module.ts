@@ -13,7 +13,7 @@ import { AdvideoComponent } from './Mycomponents/advideo/advideo.component';
 import { CrewComponent } from './Mycomponents/crew/crew.component';
 import { AgencyComponent } from './Mycomponents/agency/agency.component';
 import { ClientComponent } from './Mycomponents/client/client.component';
-import { CollectionComponent } from './Mycomponents/collection/collection.component';
+import { CollectionComponent } from './Mycomponents/collections/collection.component';
 import { AllcollectionsComponent } from './Mycomponents/allcollections/allcollections.component';
 import { SubmitComponent } from './Mycomponents/submit/submit.component';
 

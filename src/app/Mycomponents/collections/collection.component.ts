@@ -17,5 +17,6 @@ export class CollectionComponent implements OnInit {
   ngOnInit(): void {
     const title = this.route.snapshot.params['title'];
     this.collection = this.collectionservice.getbytitle(title);
+    
   }
 }
