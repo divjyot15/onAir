@@ -24,5 +24,17 @@ export const NOW : nowshowing[]=[
         image : "/assets/images/Cue math.png",
         title : "Math makes you a better coder | Cuemath | Vidya Balan",
         date : "July 19, 2021 "
+    },
+    {
+        url: "https://www.youtube.com/embed/zWfX5jeF6k4/?controls=1",
+        image : "/assets/images/nike dream crazier.png",
+        title : "#justdoit Nike - Dream Crazier",
+        date : "February 24, 2019"
+    },
+    {
+        url: "https://www.youtube.com/embed/L_TQRxKzl5s/?controls=1",
+        image : "/assets/images/Telenor.png",
+        title : "Telenor The Best Is Yet to Come",
+        date : "June 15, 2020"
     }
 ]

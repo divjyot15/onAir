@@ -5,10 +5,10 @@ import { trending } from 'src/app/shared/trending_collections';
 
 @Component({
   selector: 'app-collection',
-  templateUrl: './collection.component.html',
-  styleUrls: ['./collection.component.css']
+  templateUrl: './collections.component.html',
+  styleUrls: ['./collections.component.css']
 })
-export class CollectionComponent implements OnInit {
+export class CollectionsComponent implements OnInit {
   collection: trending;
   
   constructor(private route: ActivatedRoute,

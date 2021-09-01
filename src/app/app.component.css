@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 #logo{
  width: 100px;
 }
@@ -12,4 +16,8 @@ nav{
 } */
 html {
     scroll-behavior: smooth;
-  }
+    
+}
+#searchbtn{
+    background-color: #ddccb8;
+}

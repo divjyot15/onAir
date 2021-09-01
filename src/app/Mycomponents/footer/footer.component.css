@@ -53,10 +53,11 @@ a{
     margin-top: 50px;
 }
 #follow{
-    color: black;
+    color: white;
+    font-weight: 501px;
 }
 i{
-    color: black;
+    color: white;
     
 }
 @media only screen and (max-width: 500px){

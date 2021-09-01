@@ -7,35 +7,8 @@
             <p id="release">Released on: June 15, 2020</p>
             <div class="text-center">
 
-                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
-                data-bs-target="#intvideo">Watch the Ad</button>
+                <button type="button" class="btn btn-outline-dark"[routerLink]= "['/ads-with-crew','Telenor The Best Is Yet to Come']">Watch the Ad</button>
             </div>
-
-            <div class="modal fade" id="intvideo" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-              <div class="modal-content">
-                <!-- <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div> -->
-                <div class="modal-body" id="video">
-
-                  <div class="text-center">
-
-                    <iframe height="480" width="750" src="https://www.youtube.com/embed/L_TQRxKzl5s/?controls=1"
-                      allowfullscreen>
-                    </iframe>
-                  </div>
-
-                </div>
-                <div class="modal-footer" id="videofooter">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                </div>
-              </div>
-            </div>
-          </div>
 
 
 
@@ -49,25 +22,7 @@
       </div>
 </div>
 
-<img id="submitimg" style="width: 100%; " src="/assets/images/submit.webp" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<img id="submitimg" style="width: 100%; " src="/assets/images/submit.webp" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" routerLink ="/submit">
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <app-submit></app-submit>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>

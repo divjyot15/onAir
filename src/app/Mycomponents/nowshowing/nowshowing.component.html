@@ -4,7 +4,7 @@
 
 
   <div id="elements" >
-    <div class="card" style="width: 18rem;" *ngFor="let y of NS" [routerLink]= "['/advideo',y.title]">
+    <div class="card" style="width: 18rem;" *ngFor="let y of NS | slice:0:4" [routerLink]= "['/ads-with-crew',y.title]">
       <img src="{{y.image}}" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text" id="title">{{y.title}}</p>
@@ -16,7 +16,7 @@
   <hr>
 
   <div id="elements">
-    <div class="card" style="width: 18rem;" *ngFor="let y of NS">
+    <div class="card" style="width: 18rem;" *ngFor="let y of NS| slice:0:4">
       <img src="{{y.image}}" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text" id="title">{{y.title}}</p>
