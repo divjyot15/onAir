@@ -131,9 +131,12 @@
     margin-left: 20px;
 }
 .infobuttons{
-    background-color: pink;
     margin-left: 20px;
     margin-top: 20px;
+    background-color:  #ddccb8;
+    border: 1px solid #283444  ;
+    color: #666666;
+    font-weight: 501;
 }
 .infobuttons::after{
     content: "  >";
@@ -141,7 +144,9 @@
 #collectionbutton{
     margin-left: 20px;
     margin-top: 20px;
-    background-color: rgb(160, 133, 185);
+    background-color: #283444;
+    border: 2px solid #ddccb8 ;
+    color: white;
 }
 #collectionbutton::after{
     content: "  >";

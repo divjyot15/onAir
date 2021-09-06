@@ -12,10 +12,10 @@
 }
 #trending img{
     height: 160px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 .card{
-    border-radius: 15px;
+    /* border-radius: 15px; */
     margin: 20px auto;
     margin-bottom: 50px;
 }
@@ -29,6 +29,7 @@
 .card h4{
     margin: 10px;
     text-align: center;
+    /* color: #666666; */
 }
 #VCbtn{
     background-color:#283444 ; 
