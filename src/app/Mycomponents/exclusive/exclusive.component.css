@@ -62,7 +62,71 @@
 @media only screen and (max-width: 420px) {
     iframe{
         width: 340px;
-        height: 250px;
-       
+        height: 250px;    
     }
+    #searchheading{
+        font-size: 38px !important;
+        text-align: center;
+     }
+     #search{
+         margin-top: 50px !important;
+     }
+     #covered{
+        text-align: center;
+        font-size: 25px;
+    }
+    #search input{
+        width: 340px !important;
+        display: block;
+        margin: 40px auto !important;
+      
+    }
+    #searchimg{
+        width: 230px !important;
+        height: 230px !important;
+        margin-top: 35px !important;
+     }
+     #submitbtn{
+         display: block;
+         margin: 0px auto !important;
+     }
+
 }
+#searchheading{
+    font-size: 43px;
+    color: #666666;
+     /* text-align: center; */
+ }
+ #covered{
+     /* text-align: center; */
+ }
+ #search{
+     margin-top: 187px;
+         
+ }
+ #searchimg{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+ }
+ #search input{
+    margin-top: 20px;
+    width: 408px;
+    border: 3px solid  #283444;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+ }
+ #submitbtn{
+    
+     background-color: #283444;
+     color: white;
+     border: 3px solid  #283444;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 154px; 
+    border-radius: 10px;
+     font-size: 20px;
+ }

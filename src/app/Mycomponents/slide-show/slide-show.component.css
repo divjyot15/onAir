@@ -15,32 +15,49 @@ h2{
  #searchheading{
     font-size: 43px;
     color: #666666;
-     text-align: center;
+     /* text-align: center; */
  }
  #covered{
-     text-align: center;
+     /* text-align: center; */
  }
  #search{
      margin-top: 100px;
-     
+         
+ }
+ #searchimg{
+    width: 301px;
+    height: 324px;
  }
  #search input{
     margin-top: 20px;
-    width: 500px;
+    width: 408px;
     border: 3px solid  #283444;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
     font-size: 20px;
  }
+ #submitbtn{
+    
+     background-color: #283444;
+     color: white;
+     border: 3px solid  #283444;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 154px; 
+    border-radius: 10px;
+     font-size: 20px;
+ }
 #carouselExampleCaptions img{
     height: 100vh;
 }
-#carouselExampleCaptions button{
-    margin-bottom: 50px;
+.watch{
+    margin-bottom: 60px;
 }
 @media only screen and (max-width: 500px){
     #carouselExampleCaptions img{
         height: 210px;
     }
 }
+
