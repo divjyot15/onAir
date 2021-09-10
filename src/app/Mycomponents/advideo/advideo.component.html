@@ -28,25 +28,32 @@
 
 
     <div class="col-lg-4 col-md-8">
-      <h2 id="moreAdsHeading">
-        Watch other Ads
-      </h2>
-      <div class="card mb-3" style="max-width: 540px;" *ngFor="let x of now">
-        <div class="row g-0">
-          <div class="col-4">
-            <img id="thumbnails" src="{{x.image}}" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 id="title" class="card-title">{{x.title}}</h5>
 
-              <p id="date" class="card-text"><small class="text-muted">{{x.date}}</small></p>
+      <div id="moreads">
+        <h2 id="moreAdsHeading">
+          Watch other Ads
+        </h2>
+        <div class="card mb-3" style="max-width: 540px;" *ngFor="let x of now">
+          <div class="row g-0">
+            <div class="col-4">
+              <img id="thumbnails" src="{{x.image}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 id="title" class="card-title">{{x.title}}</h5>
+  
+                <p id="date" class="card-text"><small class="text-muted">{{x.date}}</small></p>
+              </div>
             </div>
           </div>
         </div>
+  
       </div>
+      
+      
     </div>
-  </div>
+
+ </div>
 </div>
 
 

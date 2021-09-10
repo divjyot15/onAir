@@ -1,3 +1,4 @@
+
 h1{
     text-align: center;
     margin-top: 50px;
@@ -8,7 +9,6 @@ h1{
 }
 #formsubmit h3{
     color: #666666;
-
 }
 #formsubmit{
     margin-left: 10px;
@@ -26,4 +26,38 @@ h1{
     #formsubmit h3{
         font-size: 18px;
     }
+    #allcollections img{
+        width: 250px !important;
+        
+    }
+    #allcollections{
+        margin: 20px !important;
+    }
+}
+
+.card{
+   
+    margin: 10px auto;
+    border-radius: 20px;
+}
+#allcollections{
+    /* margin: 10px auto; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px;
+    
+}
+#allcollections img{
+    height: 163px;
+    width: 281px;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+#allcollections h5{
+    font-size: 27px;
+    margin-top: 80px;
+}
+.card:hover{
+    box-shadow: 0 3px 10px #283444;
+
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { trending } from 'src/app/shared/trending_collections';
+import { TrendingService } from 'src/app/services/trending.service';
+
 
 @Component({
   selector: 'app-allcollections',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllcollectionsComponent implements OnInit {
 
-  constructor() { }
+  TC : trending[];
+  constructor(private trendingservices : TrendingService ) { }
 
   ngOnInit(): void {
+    this.TC = this.trendingservices.gettrending();
   }
-
 }
