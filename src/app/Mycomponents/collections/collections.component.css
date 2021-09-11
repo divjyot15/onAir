@@ -41,6 +41,21 @@ h1{
     #formsubmit h3{
         font-size: 18px;
     }
+    #subheading{
+        margin-bottom: 30px;
+    }
+    #elements{
+        padding: 0px !important;
+    }
+    #famous{
+       border-radius: 10px;
+        margin: 10px !important;
+        margin-bottom: 40px !important;
+    }
+    #Viewbtn{
+        margin: 0px ;
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -49,9 +64,11 @@ h1{
     margin-bottom: 0px;
 }
 #elements{
+    margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
+    padding-top: 0px ;
 }
 .card{
     margin: 10px auto;
@@ -67,11 +84,12 @@ h1{
 
 
 #famous{
-    padding: 12px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    padding: 25px;
+    box-shadow: 0 5px 10px #ddccb8;
     background-color: #283444;
     height: 404px;
     overflow-x: scroll;
+    scrollbar-color: #ddccb8 #666666;
 }
 #famous h2{
     font-size: 30px;
@@ -92,4 +110,9 @@ h1{
     height: 70px;
 }
 
-
+#famouscollections:hover{
+    background-color: #ddccb8;
+}
+#famous h5{
+    margin-top: 15px;
+}

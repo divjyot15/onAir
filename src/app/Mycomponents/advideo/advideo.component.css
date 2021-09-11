@@ -160,5 +160,13 @@
 #formsubmit{
     margin-left: 30px;
 }
-
-
+#moreads{
+    overflow-x: scroll;
+    height: 400px;
+    padding: 10px; 
+    scrollbar-color: #283444 #ddccb8 ;
+    box-shadow: 0 3px 10px #283444;
+}
+#ads:hover{
+    background-color: #d5dbe2;
+}

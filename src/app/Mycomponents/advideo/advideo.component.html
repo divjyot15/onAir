@@ -28,12 +28,12 @@
 
 
     <div class="col-lg-4 col-md-8">
-
+      <h2 id="moreAdsHeading">
+        Watch other Ads
+      </h2>
       <div id="moreads">
-        <h2 id="moreAdsHeading">
-          Watch other Ads
-        </h2>
-        <div class="card mb-3" style="max-width: 540px;" *ngFor="let x of now">
+       
+        <div id="ads" class="card mb-3" style="max-width: 540px;" *ngFor="let x of now">
           <div class="row g-0">
             <div class="col-4">
               <img id="thumbnails" src="{{x.image}}" class="img-fluid rounded-start" alt="...">
