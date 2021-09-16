@@ -141,9 +141,9 @@
     color: #666666;
     font-weight: 501;
 }
-.infobuttons::after{
+/* .infobuttons::after{
     content: "  >";
-}
+} */
 #collectionbutton{
     margin-left: 20px;
     margin-top: 20px;
@@ -151,9 +151,9 @@
     border: 2px solid #ddccb8 ;
     color: white;
 }
-#collectionbutton::after{
+/* #collectionbutton::after{
     content: "  >";
-}
+} */
 #info{
     margin-top: 50px;
 }
@@ -170,3 +170,29 @@
 #ads:hover{
     background-color: #d5dbe2;
 }
+
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

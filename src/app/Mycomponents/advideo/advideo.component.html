@@ -15,12 +15,12 @@
 
       <!-- buttons for brand and all -->
       
-      <button type="button" id="collectionbutton" class="btn">Collection</button>
+      <button type="button" id="collectionbutton" class="btn"><span>Collection</span></button>
       <br>
-      <button type="button" class="btn infobuttons">Brand:</button>
-      <button type="button" class="btn infobuttons">Client:</button>
-      <button type="button" class="btn infobuttons">PH:</button>
-      <button type="button" class="btn infobuttons">Agency:</button>
+      <button type="button" class="btn infobuttons"><span>Brand:</span></button>
+      <button type="button" class="btn infobuttons"><span>Client:</span></button>
+      <button type="button" class="btn infobuttons"><span>PH:</span></button>
+      <button type="button" class="btn infobuttons"><span>Agency:</span></button>
     </div>
 
 
@@ -49,6 +49,8 @@
         </div>
   
       </div>
+      
+
       
       
     </div>
@@ -127,24 +129,6 @@
 
 <div id="formsubmit">
   <h3>Worked On an Ad Film?</h3>
-  <button class="btn "  data-bs-toggle="modal" data-bs-target="#exampleModal">Send it to us</button>
+  <button class="btn "  routerLink = "/submit">Send it to us</button>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <app-submit></app-submit>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>

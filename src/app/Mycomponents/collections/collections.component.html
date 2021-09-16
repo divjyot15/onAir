@@ -1,45 +1,28 @@
 <h1 id="heading">{{collection.title}}</h1>
 <h2 id="subheading">onAir Collection</h2>
 
-<!-- <div id="elements">
-  <div class="card" style="width: 18rem;" *ngFor="let y of NS" [routerLink]="['/ads-with-crew',y.title]">
-    <img src="{{y.image}}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text" id="title">{{y.title}}</p>
-      <p class="text-muted">{{y.date}}</p>
-    </div> 
-  </div>
-</div>
-
-<div id="elements">
-  <div class="card" style="width: 18rem;" *ngFor="let y of NS | slice: 0:3"
-    [routerLink]="['/ads-with-crew',y.title]">
-    <img src="{{y.image}}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text" id="title">{{y.title}}</p>
-      <p class="text-muted">{{y.date}}</p>
-    </div>
-  </div>
-</div> -->
-
 
 
 
 <div class="container">
+
   <div class="row">
+
     <div class="col-lg-8">
 
+      <!-- Elements of the particular collection -->
+
       <div id="elements">
-        <div class="card" style="width: 18rem;" *ngFor="let y of NS | slice: 0:3" [routerLink]="['/ads-with-crew',y.title]">
+        <div class="card" style="width: 18rem;" *ngFor="let y of NS " [routerLink]="['/ads-with-crew',y.title]">
           <img src="{{y.image}}" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text" id="title">{{y.title}}</p>
             <p class="text-muted">{{y.date}}</p>
-          </div> 
+          </div>
         </div>
       </div>
 
-      <!-- <div id="elements">
+      <div id="elements">
         <div class="card" style="width: 18rem;" *ngFor="let y of NS | slice: 0:3"
           [routerLink]="['/ads-with-crew',y.title]">
           <img src="{{y.image}}" class="card-img-top" alt="...">
@@ -48,12 +31,14 @@
             <p class="text-muted">{{y.date}}</p>
           </div>
         </div>
-      </div> -->
+      </div>
 
     </div>
 
     <div class="col-lg-4">
-      
+
+      <!-- Famous collections scroller -->
+
       <div id="famous">
         <h2>Some Famous Collections</h2>
         <div id="famouscollections" class="card mb-3" style="max-width: 540px;" *ngFor="let x of COLLECTIONS">
@@ -69,7 +54,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
 
 
@@ -84,24 +69,5 @@
 
     <div id="formsubmit">
       <h3>Worked On an Ad Film?</h3>
-      <button class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">Send it to us</button>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <app-submit></app-submit>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
+      <button class="btn " routerLink="/submit">Send it to us</button>
     </div>
