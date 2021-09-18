@@ -16,6 +16,8 @@ import { ClientComponent } from './Mycomponents/client/client.component';
 import { CollectionsComponent } from './Mycomponents/collections/collections.component';
 import { AllcollectionsComponent } from './Mycomponents/allcollections/allcollections.component';
 import { SubmitComponent } from './Mycomponents/submit/submit.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -32,10 +34,11 @@ import { SubmitComponent } from './Mycomponents/submit/submit.component';
     ClientComponent,
     CollectionsComponent,
     AllcollectionsComponent,
-    SubmitComponent
+    SubmitComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { ApiService } from './services/api/api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,19 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
+
   title = 'onAir';
+
+  constructor(private apiService: ApiService){
+  }
+
+  ngOnInit(){
+    this.apiService.getHome().then(res => {
+      console.log('home', res);
+    })
+  }
+
+
 //   onActivate() {
 //     let scrollToTop = window.setInterval(() => {
 //         let pos = window.pageYOffset;
