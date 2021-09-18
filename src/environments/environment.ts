@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'https://onair.icrewedup.com/api/'
+  api: 'https://newair.icrewedup.com/api/'
 };
 
 /*
