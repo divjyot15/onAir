@@ -8,6 +8,8 @@ body{
 nav{
     background-color: #283444;
     scroll-behavior: smooth;
+    color: white;
+    
 }
 /* @media only screen and (max-width: 500px){
     #submitimg{
@@ -21,3 +23,37 @@ html {
 #searchbtn{
     background-color: #ddccb8;
 }
+.active-link{
+    color: white;
+}
+#searchinput{
+    width: 300px;
+}
+
+.btn{
+    width: 115px;
+}
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 18px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

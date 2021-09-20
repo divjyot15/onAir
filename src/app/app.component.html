@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Home</a>
+          <a class="nav-link"  href="" routerLinkActive="active-link"  routerLink = "/slideshow">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#trendingcollection">Trending</a>
+          <a class="nav-link" routerLink = "/allcollections" routerLinkActive="active-link">Collections</a>
         </li>
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -26,13 +26,11 @@
         <!-- <li class="nav-item"> 
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="#nowshowing">Now Showing</a>
-        </li>
+        
       </ul>  
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search for Ads with Crew" aria-label="Search">
-        <button id="searchbtn" class="btn" type="submit">Search</button>
+        <input id="searchinput" class="form-control me-2" type="search" placeholder="Search for Ads with Crew" aria-label="Search">
+        <button id="searchbtn" class="btn" type="submit"><span>Search</span></button>
       </form>
     </div>
   </div>
