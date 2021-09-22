@@ -63,29 +63,34 @@
     }
     #subscribe h1{
         padding-top: 30px !important;
-        font-size: 38px !important;
+        font-size: 25px !important;
         margin-bottom: 10px !important;
     }
     #subscribe p{
-        font-size: 18px !important;
+        font-size: 16px !important;
         padding: 5px;
+        margin-bottom: 20px !important;
     }
     #subscribe input{
         width: 277px !important;
+        font-size: 14px;
     }
     #subscribe button{
         width: 277px !important;
+        font-size: 16px;
     }
 
     #worked{
-        font-size: 43px !important;
+        font-size: 25px !important;
     }
     #get{
-        font-size: 30px !important;
+        font-size: 20px !important;
 
     }
     #getad{
-        width: 300px !important ;
+        font-size: 16px !important;
+        width: 180px !important ;
+        padding: 5px !important;
     }
 }
 
@@ -103,8 +108,8 @@ iframe{
 }
 #getad{
     background-color: #ddccb8;
-    border-radius: 10px;
-    width: 400px;
+    border-radius: 5px;
+    width: 200px;
     margin-bottom: 50px;
     margin-top: 30px;
     color: #666666;
@@ -150,3 +155,67 @@ iframe{
     margin-top: 20px;
     margin-bottom: 35px;
 }
+
+
+
+#subscribe button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #subscribe button span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #subscribe button:hover{
+    background-color: #283444;
+    color: #666666;
+  }
+  
+  #subscribe button:hover span {
+    padding-right: 18px;
+  }
+  
+  #subscribe button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+
+#getad span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #getad span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #getad:hover{
+    background-color: rgb(245, 245, 245);
+    color: #666666;
+  }
+  
+  #getad:hover span {
+    padding-right: 18px;
+  }
+  
+  #getad:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

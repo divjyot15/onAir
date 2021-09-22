@@ -8,7 +8,7 @@
       <img src="{{y.image}}" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text" id="title">{{y.title}}</p>
-        <p class="text-muted">{{y.date}}</p>
+        <p id="date" class="text-muted">{{y.date}}</p>
       </div>
     </div>
   </div>
@@ -20,10 +20,17 @@
       <img src="{{y.image}}" class="card-img-top" alt="...">
       <div class="card-body">
         <p class="card-text" id="title">{{y.title}}</p>
-        <p class="text-muted">{{y.date}}</p>
+        <p  id="date" class="text-muted">{{y.date}}</p>
       </div>
     </div>
   </div>
+
+  <div class="text-center">
+    <p id="interested">Interested in Other Ads?</p>
+    <button id="navigationbtn" class="btn " routerLink = "/allcollections"><span>View onAir Collections</span></button>
+  </div>
+  
+
 
 
   <!-- <div class="accordion accordion-flush" id="accordionFlushExample">

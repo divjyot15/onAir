@@ -39,7 +39,7 @@
 #watchadbtn{
     background-color: #ddccb8;
     color: #666666;
-    font-weight: 601;
+    font-weight: 501;
     border-radius: 5px;
 }
 
@@ -57,7 +57,6 @@
     top: 0;
     right: -20px;
     transition: 0.5s;
-    
   }
   #watchadbtn:hover{
     background-color: #283444;
@@ -133,10 +132,10 @@
      #submitbtn{
          display: block;
          margin: 0px auto !important;
-         font-size: 18px !important;
+         font-size: 16px !important;
      }
      #watchadbtn a{
-         font-size: 18px !important;
+         font-size: 16px !important;
      }
 
 }

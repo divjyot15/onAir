@@ -4,19 +4,30 @@
     color: #ddccb8 !important;
     font-size: 43px;
     margin-top: 75px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+    font-weight: 601;
 }
 #title{
     font-weight: 501;
     margin-bottom: 0px;
+    font-size: 16px;
+    color: #666666;
+}
+#date{
+    font-size: 14px !important;
+    color: #283444;
 }
 #elements{
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    /* padding: 0px 120px; */
+
 }
 .card{
-    margin: 10px auto;
+    margin: 10px 12px;
     border: none;
 }
 .card img{
@@ -31,3 +42,64 @@ hr{
     margin-bottom: 50px;
     color: #c9c9c9;
 }
+
+#interested{
+    color: #666666;
+    font-size: 25px;
+}
+
+#navigationbtn{
+    padding: 5px 10px;
+    background-color: #ddccb8;
+    color: #666666;
+    font-weight:501;
+    border-radius: 5px;
+    /* width: 220px; */
+
+}
+
+@media only screen and (max-width: 420px){
+    #heading{
+        margin-top: 70px;
+        font-size: 25px;
+    }
+    #title{
+        font-size: 14px;
+    }
+    #date{
+        font-size: 12px !important;
+    }
+    #navigationbtn{
+        font-size: 16px !important;
+    }
+}
+
+
+#navigationbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #navigationbtn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #navigationbtn:hover{
+    background-color: rgb(245, 245, 245);
+    color: #666666;
+  }
+  
+  #navigationbtn:hover span {
+    padding-right: 18px;
+  }
+  
+  #navigationbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

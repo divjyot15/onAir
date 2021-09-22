@@ -9,7 +9,8 @@
 #trending{
     display: flex;
     flex-wrap: wrap;
-    padding:  0px 120px ;
+    justify-content: center;
+    /* padding:  0px 120px ; */
 }
 #trending img{
     height: 160px;
@@ -18,14 +19,14 @@
 .card{
    
     border-radius: 5px;
-    margin: 0px auto;
+    margin: 0px 12px;
     margin-bottom: 20px;
 }
 #Viewbtn{
     background-color: #ddccb8;
     margin: 50px;
     margin-top: 20px;
-    width: 300px;
+    width: 250px;
     color: #666666;
     font-weight: 501;
     border-radius: 5px;
@@ -65,5 +66,36 @@
         margin: 0px;
         margin-bottom: 30px;
         width: 200px;
+        font-size: 16px !important;
     }
 }
+
+
+ #Viewbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #Viewbtn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #Viewbtn:hover{
+    background-color: rgb(245, 245, 245);
+    color: #666666;
+  }
+  
+  #Viewbtn:hover span {
+    padding-right: 18px;
+  }
+  
+  #Viewbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
