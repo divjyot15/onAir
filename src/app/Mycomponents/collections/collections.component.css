@@ -1,48 +1,65 @@
 h1{
     text-align: center;
-    margin-top: 50px;
-    font-size: 50px;
+    margin-top: 71px;
+    font-size: 43px;
     color: #ddccb8;
-    font-weight: 501;
+    font-weight: 601;
 }
 #subheading{
     text-align: center;
-    margin-bottom: 110px;
+    margin-bottom: 40px;
+    font-size: 30px;
 }
 
 #formsubmit h3{
     color: #666666;
-
+    font-size: 38px;
 }
 #formsubmit{
-    margin-left: 10px;
-    margin-bottom: 20px;
+    padding: 50px;
+    padding-bottom: 70px;
+    background-color: #ddccb8;
+    margin-top: 30px;
 }
 #formsubmit button{
-    background-color:#ddccb8;
-    color: #666666;
+    background-color: #283444;
+    color: #ddccb8;
     font-weight: 501;
+    margin-top: 19px;
+    width: 180px;
+    font-size: 18px;
 }
 #Viewbtn{
     background-color: #ddccb8;
-    margin: 50px;
+    margin: 20px;
     color: #666666;
     font-weight: 501;
-    border-radius: 15px;
+    border-radius: 5px;
+    width: 230px;
+    font-size: 18px;
 }
 @media only screen and (max-width: 500px) {
     #heading{
-        font-size: 38px;
+        font-size: 25px;
+        margin-top: 50px;
     }
     #Viewbtn{
         margin: 0px;
         margin-bottom: 30px;
+        font-size: 16px;
+    }
+    #formsubmit{
+        padding: 30px;
     }
     #formsubmit h3{
-        font-size: 18px;
+        font-size: 25px;
+    }
+    #formsubmit button{
+        font-size: 16px;
     }
     #subheading{
         margin-bottom: 30px;
+        font-size: 18px !important;
     }
     #elements{
         padding: 0px !important;
@@ -51,10 +68,26 @@ h1{
        border-radius: 10px;
         margin: 10px !important;
         margin-bottom: 40px !important;
+        padding: 0px !important;
+        height: 463px;
+    }
+    #famous h2{
+        padding: 20px;
+        margin-bottom: 0px !important;
     }
     #Viewbtn{
         margin: 0px ;
         margin-bottom: 30px;
+
+    }
+    #title{
+        font-size: 14px;
+    }
+    #date{
+        font-size: 12px !important;
+    }
+    #famous h2{
+        font-size: 25px !important;
     }
 }
 
@@ -69,9 +102,10 @@ h1{
     flex-wrap: wrap;
     padding: 50px;
     padding-top: 0px ;
+    justify-content: center;
 }
 .card{
-    margin: 10px auto;
+    margin: 10px 12px;
     border: none;
 }
 .card img{
@@ -87,9 +121,11 @@ h1{
     padding: 25px;
     box-shadow: 0 5px 10px #ddccb8;
     background-color: #283444;
-    height: 404px;
-    overflow-x: scroll;
-    scrollbar-color: #ddccb8 #666666;
+    /* height: 404px; */
+    /* overflow-x: scroll;
+    scrollbar-color: #ddccb8 #666666; */
+    margin-top: 100px;
+    border-radius: 5px;
 }
 #famous h2{
     font-size: 30px;
@@ -116,3 +152,66 @@ h1{
 #famous h5{
     margin-top: 15px;
 }
+
+
+#Viewbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #Viewbtn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #Viewbtn:hover{
+    background-color: rgb(245, 245, 245);
+    color: #666666;
+  }
+  
+  #Viewbtn:hover span {
+    padding-right: 18px;
+  }
+  
+  #Viewbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  
+
+
+
+  #formsubmit button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #formsubmit button span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #formsubmit button:hover{
+    background-color: #ddccb8;
+    color: #666666;
+  }
+  
+  #formsubmit button:hover span {
+    padding-right: 18px;
+  }
+  
+  #formsubmit button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

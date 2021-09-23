@@ -1,14 +1,11 @@
-<h1 id="heading">{{collection.title}}</h1>
-<h2 id="subheading">onAir Collection</h2>
-
-
-
-
 <div class="container">
 
   <div class="row">
 
     <div class="col-lg-8">
+
+      <h1 id="heading">{{collection.title}}</h1>
+      <h2 id="subheading">onAir Collection</h2>
 
       <!-- Elements of the particular collection -->
 
@@ -17,13 +14,13 @@
           <img src="{{y.image}}" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text" id="title">{{y.title}}</p>
-            <p class="text-muted">{{y.date}}</p>
+            <p class="text-muted" id="date">{{y.date}}</p>
           </div>
         </div>
       </div>
 
-      <div id="elements">
-        <div class="card" style="width: 18rem;" *ngFor="let y of NS | slice: 0:3"
+      <!-- <div id="elements">
+        <div class="card" style="width: 18rem;" *ngFor="let y of NS | slice: 0:1"
           [routerLink]="['/ads-with-crew',y.title]">
           <img src="{{y.image}}" class="card-img-top" alt="...">
           <div class="card-body">
@@ -31,7 +28,7 @@
             <p class="text-muted">{{y.date}}</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -53,21 +50,29 @@
             </div>
           </div>
         </div>
+        
       </div>
-
+        <div class="text-center">
+          <button id="Viewbtn" class="btn" type="button" routerLink="/allcollections"><span>View All Collections</span></button>
+        </div>
+       
+  
+  
     </div>
-
-
-
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button id="Viewbtn" class="btn" type="button" routerLink="/allcollections">View All Collections</button>
-
     </div>
+    
+    
 
 
-
-
-    <div id="formsubmit">
-      <h3>Worked On an Ad Film?</h3>
-      <button class="btn " routerLink="/submit">Send it to us</button>
+    
     </div>
+      <div class="text-center">
+
+        <div id="formsubmit" >
+          <h3>Worked On an Ad Film?</h3>
+          <button class="btn " routerLink="/submit"><span>Send it to us</span></button>
+        </div>
+      
+      </div>
+    
+     
