@@ -83,7 +83,9 @@
    #formsubmit{
        padding-top: 20px;
    }
-
+   #formsubmit h3{
+    font-size: 18px;
+    }
    
 }
 
@@ -91,18 +93,21 @@
 
 #formsubmit h3{
     color: #666666;
-    
+    font-size: 38px;
 }
 #formsubmit{
-        margin-left: 10px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+    padding: 50px;
+    padding-bottom: 70px;
+    background-color: #ddccb8;
+    margin-top: 30px;
 }
 #formsubmit button{
-        background-color:#ddccb8;
-        color: #666666;
-        font-weight: 501;
-
+    background-color: #283444;
+    color: #ddccb8;
+    font-weight: 501;
+    margin-top: 19px;
+    width: 180px;
+    font-size: 18px;
 }
     
 #info h4{
@@ -128,7 +133,7 @@
     margin-top: 30px;
     color:#283444 ;
     font-weight: 501;
-    text-shadow: 1px 1px #ddccb8;
+    /* text-shadow: 1px 1px #ddccb8; */
 }
 #releasedon{
     margin-left: 20px;
@@ -137,7 +142,7 @@
     margin-left: 20px;
     margin-top: 20px;
     background-color:  #ddccb8;
-    border: 1px solid #283444  ;
+    /* border: 1px solid #283444  ; */
     color: #666666;
     font-weight: 501;
 }
@@ -148,7 +153,7 @@
     margin-left: 20px;
     margin-top: 20px;
     background-color: #283444;
-    border: 2px solid #ddccb8 ;
+    /* border: 2px solid #ddccb8 ; */
     color: white;
 }
 /* #collectionbutton::after{
@@ -157,9 +162,7 @@
 #info{
     margin-top: 50px;
 }
-#formsubmit{
-    margin-left: 30px;
-}
+
 #moreads{
     overflow-x: scroll;
     height: 400px;
@@ -180,7 +183,7 @@
   }
   
   .btn span:after {
-    content: '\00bb';
+    content: '>';
     position: absolute;
     opacity: 0;
     top: 0;

@@ -1,5 +1,45 @@
 <div id="allcollectionspage">
-  <h1 id="heading">onAir Collections</h1>
+  <h1 id="allcheading">onAir Collections</h1>
+
+ 
+  
+
+  <div class="float-end">
+    <input id="search" type="text" placeholder="Search for a Collection...">
+    <button class="btn" id="searchbtn">Search</button>
+  </div> <br>
+  
+  
+  
+
+  <div id="trendingcollection">
+    <h2 id="heading"> Some Trending Collections</h2>
+    <div id="trending">
+      <div class="card" id="trendingcard" style="width: 18rem;" *ngFor="let x of TC" [routerLink]="['/collections', x.title]">
+        <img src="{{x.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">{{x.title}}</h4>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p> -->
+          <!-- <div class="text-center">
+  
+            <a id="VCbtn" href="#" class="btn" >View Collection</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="d-grid gap-2 col-6 mx-auto">
+    <div class="text-center">
+  
+      <button id="Viewbtn" class="btn" type="button" routerLink="/allcollections"><span>View All Collections</span></button>
+    </div>
+  
+  </div> -->
+
+ 
+
 
   <div id="allcollections" >
     <div class="card bg-dark text-white" *ngFor= "let x of TC">
@@ -28,11 +68,17 @@
   </div>
   
   
-  <div id="formsubmit">
-      <h3>Worked On an Ad Film?</h3>
-      <button class="btn " routerLink = '/submit'>Send it to us</button>
-  </div>
+ 
   
 </div>
 
 
+
+<div class="text-center">
+
+  <div id="formsubmit" >
+    <h3>Worked On an Ad Film?</h3>
+    <button class="btn " routerLink="/submit"><span>Send it to us</span></button>
+  </div>
+
+</div>

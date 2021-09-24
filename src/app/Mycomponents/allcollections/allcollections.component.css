@@ -1,23 +1,30 @@
 
-h1{
+
+#allcheading{
     text-align: center;
     margin-top: 50px;
     font-size: 50px;
     color: #ddccb8;
-    font-weight: 501;
-    margin-bottom: 50px;
+    font-weight: 601;
+    margin-bottom: 20px;
 }
 #formsubmit h3{
     color: #666666;
+    font-size: 38px;
 }
 #formsubmit{
-    margin-left: 10px;
-    margin-bottom: 20px;
+    padding: 50px;
+    padding-bottom: 70px;
+    background-color: #ddccb8;
+    margin-top: 30px;
 }
 #formsubmit button{
-    background-color:#ddccb8;
-    color: #666666;
+    background-color: #283444;
+    color: #ddccb8;
     font-weight: 501;
+    margin-top: 19px;
+    width: 180px;
+    font-size: 18px;
 }
 @media only screen and (max-width: 500px) {
     #heading{
@@ -33,6 +40,14 @@ h1{
     #allcollections{
         margin: 20px !important;
     }
+    #allcheading{
+        font-size: 25px;
+    }
+    #search{
+        width: 235px !important;
+        margin-bottom: 20px;
+    }
+  
 }
 
 .card{
@@ -44,7 +59,7 @@ h1{
     /* margin: 10px auto; */
     display: flex;
     flex-wrap: wrap;
-    margin: 70px;
+    justify-content: center;
     
 }
 #allcollections img{
@@ -61,3 +76,157 @@ h1{
     box-shadow: 0 3px 10px #283444;
 
 }
+#search{
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #283444;
+    
+}
+#searchbtn{
+    background-color: #ddccb8;
+    color: #666666;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+
+
+
+
+/* CSS FOR TRENDING COLLECTION IS BELOW */
+
+
+
+#heading{
+    text-align: center;
+    color: white !important;
+    font-size: 38px;
+    /* margin-top: 81px;
+    margin-bottom: 20px; */
+    padding: 20px;
+    font-weight: 501;
+}
+#trendingcollection{
+    background-color: #283444;
+    /* margin: 10px; */
+    
+    margin: 50px;
+    margin-top: 70px;
+    border-radius: 30px;
+}
+#trending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding:  0px 120px ; */
+   
+}
+#trending img{
+    height: 160px;
+    border-radius: 5px;
+}
+.card{
+    background-color: #283444; color: #ddccb8;
+    border-radius: 5px;
+    margin: 0px 12px;
+    margin-bottom: 20px;
+   
+}
+#Viewbtn{
+    background-color: #ddccb8;
+    margin: 50px;
+    margin-top: 20px;
+    width: 250px;
+    color: #666666;
+    font-weight: 501;
+    border-radius: 5px;
+}
+.card h4{
+    
+    margin: 10px;
+    text-align: center;
+    /* color: #666666; */
+}
+#VCbtn{
+    background-color:#283444 ; 
+    color: #ddccb8 !important;
+    margin: 30px;
+    font-weight: 501;
+}
+#trendingcard:hover{
+    box-shadow: 0 3px 10px #ddccb8 ;
+}
+@media only screen and (max-width: 500px) {
+    #trending{
+        padding: 0px !important;
+    }
+    .card h4{
+        font-size: 18px;
+        margin: 5px;
+        text-align: center;
+        /* color: #666666; */
+    }
+    #heading{
+        font-size: 25px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    #Viewbtn{
+        margin: 0px;
+        margin-bottom: 30px;
+        width: 200px;
+        font-size: 16px !important;
+    }
+    #trendingcollection{
+        margin: 10px ;
+        border-radius: 5px;
+        height: 407px;
+        overflow-x: scroll;
+    }
+    #heading{
+        margin-top: 20px;
+    }
+}
+
+
+ #Viewbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #Viewbtn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #Viewbtn:hover{
+    background-color: rgb(245, 245, 245);
+    color: #666666;
+  }
+  
+  #Viewbtn:hover span {
+    padding-right: 18px;
+  }
+  
+  #Viewbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+
+
+
+
