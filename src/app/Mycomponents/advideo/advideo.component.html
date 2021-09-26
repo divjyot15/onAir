@@ -50,6 +50,25 @@
   
       </div>
       
+      <div id="famous">
+        <h2>Some Famous Collections</h2>
+        <div id="famouscollections" class="card mb-3" style="max-width: 540px;" *ngFor="let x of COLLECTIONS">
+          <div class="row g-0">
+            <div class="col-4">
+              <img id="thumbnails" src="{{x.image}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 id="title" class="card-title">{{x.title}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+        <div class="text-center">
+          <button id="Viewbtn" class="btn" type="button" routerLink="/allcollections"><span>View All Collections</span></button>
+        </div>
 
       
       

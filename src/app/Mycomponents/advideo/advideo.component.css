@@ -15,9 +15,9 @@
 }
 #moreAdsHeading{
     text-align: center;
-    margin-bottom: 40px;
-    color: #283444;
-    font-size: 35px;
+    margin-bottom: 10px;
+    color: #666666;
+    font-size: 30px;
 }
 /* #moreads{
    
@@ -25,6 +25,7 @@
 #infobuttons{
     margin-left: 20px;
 }
+
 #infobuttons button{
     margin: 5px;
     font-weight: 501;
@@ -45,6 +46,7 @@
          height: 250px;
         margin-bottom: 0px;
      }
+     
      #moreAdsHeading{
         text-align: center;
         margin-bottom: 10px;
@@ -58,13 +60,21 @@
     }
     #title{
         font-size: 15px;
-       
+        
      }
      #date{
          font-size: 15px;
      }
-     #infobuttons{
-        margin-top: 0px;
+     .infobuttons{
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+        margin-right: 15px !important;
+
+    }
+    #collectionbutton{
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+
     }
     #releasedon{
         margin-bottom: 10px;
@@ -81,10 +91,25 @@
        margin-top: 10px;
    }
    #formsubmit{
-       padding-top: 20px;
+       padding: 25px !important;
+       padding-bottom: 40px !important;
    }
    #formsubmit h3{
-    font-size: 18px;
+    font-size: 25px !important;
+    }
+    #formsubmit button{
+        font-size: 16px !important;
+    }
+    #videotitle{
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+        color:#283444 ;
+        font-weight: 501;
+        font-size: 20px;
+    }
+    #releasedon{
+        margin-left: 0px !important;
+        font-size: 18px;
     }
    
 }
@@ -165,7 +190,7 @@
 
 #moreads{
     overflow-x: scroll;
-    height: 400px;
+    height: 285px;
     padding: 10px; 
     scrollbar-color: #283444 #ddccb8 ;
     box-shadow: 0 3px 10px #283444;
@@ -182,6 +207,7 @@
     transition: 0.5s;
   }
   
+  
   .btn span:after {
     content: '>';
     position: absolute;
@@ -196,6 +222,132 @@
   }
   
   .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+  #formsubmit button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #formsubmit button span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #formsubmit button:hover{
+    background-color: #ddccb8;
+    color: #666666;
+  }
+  
+  #formsubmit button:hover span {
+    padding-right: 18px;
+  }
+  
+  #formsubmit button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+  /* CSS FOR SOME FAMOUS COLLECTIONS BELOW : */
+
+
+  #famous{
+    padding: 25px;
+    padding-top: 4px;
+    box-shadow: 0 5px 10px #ddccb8;
+    background-color: #283444;
+    /* height: 404px; */
+    /* overflow-x: scroll;
+    scrollbar-color: #ddccb8 #666666; */
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow-x: scroll;
+    height: 285px;
+}
+#famous h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 420px){
+    #famous h2{
+        font-size: 25px;
+    }
+    #Viewbtn{
+        font-size: 16px !important;
+        margin-bottom: 0px !important;
+    }
+    
+}
+
+
+
+.card-body{
+    padding: 10px;
+    padding-top: 3px;
+}
+#thumbnails{
+    width: 130px;
+    height: 70px;
+}
+
+#famouscollections:hover{
+    background-color: #ddccb8;
+}
+#famous h5{
+    margin-top: 15px;
+}
+
+#Viewbtn{
+    background-color: #ddccb8;
+    margin: 20px;
+    color: #666666;
+    font-weight: 501;
+    border-radius: 5px;
+    width: 230px;
+    font-size: 18px;
+}
+
+
+
+#Viewbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #Viewbtn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #Viewbtn:hover{
+    background-color: rgb(245, 245, 245);
+    color: #666666;
+  }
+  
+  #Viewbtn:hover span {
+    padding-right: 18px;
+  }
+  
+  #Viewbtn:hover span:after {
     opacity: 1;
     right: 0;
   }
