@@ -6,7 +6,7 @@
     font-size: 50px;
     color: #ddccb8;
     font-weight: 601;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 #formsubmit h3{
     color: #666666;
@@ -26,13 +26,52 @@
     width: 180px;
     font-size: 18px;
 }
+
+#formsubmit button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #formsubmit button span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #formsubmit button:hover{
+    background-color: #ddccb8;
+    color: #666666;
+  }
+  
+  #formsubmit button:hover span {
+    padding-right: 18px;
+  }
+  
+  #formsubmit button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
 @media only screen and (max-width: 500px) {
     #heading{
         font-size: 38px;
     }
-    #formsubmit h3{
-        font-size: 18px;
+    #formsubmit{
+        padding: 25px !important;
+        padding-bottom: 40px !important;
     }
+    #formsubmit h3{
+     font-size: 25px !important;
+     }
+     #formsubmit button{
+         font-size: 16px !important;
+     }
     #allcollections img{
         width: 250px !important;
         
@@ -42,10 +81,12 @@
     }
     #allcheading{
         font-size: 25px;
+        margin-bottom: 20px;
     }
     #search{
         width: 235px !important;
-        margin-bottom: 20px;
+        margin-bottom: 0px !important;
+        margin-left: 4px;
     }
   
 }
@@ -77,7 +118,7 @@
 
 }
 #search{
-    width: 400px;
+    width: 580px;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -93,6 +134,37 @@
     border-radius: 5px;
     width: 100px;
 }
+
+#searchbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #searchbtn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #searchbtn:hover{
+    background-color: rgb(245, 245, 245);
+    color: #666666;
+  }
+  
+  #searchbtn:hover span {
+    padding-right: 18px;
+  }
+  
+  #searchbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
 
 
 
@@ -116,7 +188,7 @@
     /* margin: 10px; */
     
     margin: 50px;
-    margin-top: 70px;
+    margin-top: 30px;
     border-radius: 30px;
 }
 #trending{
@@ -173,8 +245,8 @@
     }
     #heading{
         font-size: 25px;
-        margin-top: 70px;
-        margin-bottom: 20px;
+        margin: 0px !important;
+
     }
     #Viewbtn{
         margin: 0px;
@@ -183,14 +255,29 @@
         font-size: 16px !important;
     }
     #trendingcollection{
-        margin: 10px ;
-        border-radius: 5px;
+        margin: 18px ;
+        margin-top: 0px;
+        border-radius: 10px;
         height: 407px;
         overflow-x: scroll;
     }
     #heading{
         margin-top: 20px;
     }
+    /* #trending{
+        flex-wrap: nowrap;
+        width: 300px;
+        overflow: hidden;
+    }
+    #trendingcard{
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        
+        width: 280px !important;
+        
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    } */
 }
 
 
