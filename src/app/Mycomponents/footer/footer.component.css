@@ -47,10 +47,12 @@ a{
 #findbtn1{
     margin-right: 10px;
     margin-top: 50px;
+    width: 225px;
 }
 #findbtn2{
     margin-left: 10px;
     margin-top: 50px;
+    width: 225px;
 }
 #follow{
     color: white;
@@ -103,3 +105,33 @@ i{
         font-size: 18px !important;
     }
 }
+
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .btn:hover{
+      background-color: #283444;
+  }
+  
+  .btn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+

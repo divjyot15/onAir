@@ -6,8 +6,8 @@
     border-radius: 20px;
 }
 #heading{
-    margin-top: 142px;
-    color: #283444;
+    margin-top: 130px;
+    color: #666666;
     font-size: 43px;
     text-align: center;
 }
@@ -30,16 +30,63 @@
     margin-bottom: 38px;
     color: #283444;
 }
+#ViewCbtn{
+    background-color: #283444;
+    margin: 20px;
+    margin-top: 0px;
+    color: #ddccb8;
+    font-weight: 501;
+    border-radius: 5px;
+    width: 230px;
+    font-size: 18px;
+}
+
+
+
+#ViewCbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #ViewCbtn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  #ViewCbtn:hover{
+    background-color: #ddccb8;
+    color: #666666;
+  }
+  
+  #ViewCbtn:hover span {
+    padding-right: 18px;
+  }
+  
+  #ViewCbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 @media only screen and (max-width: 500px){
     #heading{
-        font-size: 38px;
+        font-size: 25px;
         margin-top: 20px;
     }
     #telenor{
         width: 300px;
         height: 200px;
         margin: 20px;
+        margin-bottom: 30px;
         /* margin-left: 25px; */
+    }
+    #ViewCbtn{
+        font-size: 16px !important;
+        margin-top: 20px;
     }
 }
 
@@ -82,6 +129,7 @@
 
     #worked{
         font-size: 25px !important;
+        padding-top: 30px !important;
     }
     #get{
         font-size: 20px !important;
@@ -91,6 +139,17 @@
         font-size: 16px !important;
         width: 180px !important ;
         padding: 5px !important;
+        margin-top: 13px !important;
+        margin-bottom: 30px !important;
+    }
+    #info{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    #release{
+        font-size: 16px;
+        margin-bottom: 0px;
+        margin-top: 10px;
     }
 }
 
