@@ -10,14 +10,21 @@ import { ApiService } from './services/api/api.service';
 export class AppComponent{
 
   title = 'onAir';
-
+  info : Object;
+  
   constructor(private apiService: ApiService){
   }
 
   ngOnInit(){
     this.apiService.getHome().then(res => {
-      console.log('home', res);
+      this.info = res;
+      console.log('home', res)
+      
     })
+    
+      
+    
+    
   }
 
 

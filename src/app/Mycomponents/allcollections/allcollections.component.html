@@ -37,7 +37,7 @@
 
 
   <div id="allcollections" >
-    <div class="card bg-dark text-white" *ngFor= "let x of TC">
+    <div class="card bg-dark text-white" *ngFor= "let x of TC"  [routerLink]="['/collections', x.title]">
       <img src="{{x.image}}" class="card-img" alt="...">
       <div class="card-img-overlay">
         <h5 class="card-title">{{x.title}}</h5>

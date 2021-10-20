@@ -33,7 +33,7 @@
       </h2>
       <div id="moreads">
        
-        <div id="ads" class="card mb-3" style="max-width: 540px;" *ngFor="let x of now">
+        <div id="ads" class="card mb-3" style="max-width: 540px;" *ngFor="let x of now" [routerLink]="['/ads-with-crew',x.title]">
           <div class="row g-0">
             <div class="col-4">
               <img id="thumbnails" src="{{x.image}}" class="img-fluid rounded-start" alt="...">
@@ -52,7 +52,7 @@
       
       <div id="famous">
         <h2>Some Famous Collections</h2>
-        <div id="famouscollections" class="card mb-3" style="max-width: 540px;" *ngFor="let x of COLLECTIONS">
+        <div id="famouscollections" class="card mb-3" style="max-width: 540px;" *ngFor="let x of COLLECTIONS"  [routerLink]="['/collections', x.title]">
           <div class="row g-0">
             <div class="col-4">
               <img id="thumbnails" src="{{x.image}}" class="img-fluid rounded-start" alt="...">
